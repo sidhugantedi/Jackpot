@@ -1,0 +1,131 @@
+.jack {
+     h1 {
+    font: {
+      size: 80px;
+      weight: 200;
+    }
+    color: #f35626;
+    filter: hue-rotate(0deg);
+    animation: hue 10000ms infinite linear, bounceIn 3s linear;
+    position: relative;
+    top: 25%;
+    left: 25%;
+  }
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  
+  // background: linear-gradient(45deg, #9346E5, #5F5DD7);
+}
+@keyframes hue{
+  0%{filter: hue-rotate(0deg);}
+  25% {
+    filter: hue-rotate(180deg);
+  }
+  100%{filter:hue-rotate(360deg);}
+  
+}
+@keyframes bounceIn {
+  0% {
+  transform: scale(0.3) translate3d(0,0,0);
+  opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  transform: scale(1.1);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(0.89 );
+  }
+  100% {
+    opacity: 1;
+  transform: scale(1) translate3d(0,0,0);
+  }
+}
+
+.slider {
+  p {
+    font: {
+      size: 45px;
+      weight: 200;
+    }
+    position: absolute;
+      top: 55%;
+      left: 30%;
+    color: #fff;
+    animation: {
+      name: slide-in;
+      duration: 3s;
+      iteration-count: infinite;
+    }
+    position: absolute;
+  }
+} 
+@keyframes slide-in {
+  from {
+    margin-left: 100%;
+    width: 100%;
+    color: #fff;
+  }
+  to {
+    margin-left: 0%;
+    width: 300%;
+    color: #f35626;
+  }
+}
+.jack {
+  .b1, .b2, .b3 {
+    height: 30px;
+    width: 50px;
+    border-radius: 100%;
+    background: rgba(256,256,256,0.89);
+    margin: 5px;
+    display: inline-block;
+    position: absolute;
+    top: 45%;
+  animation: {
+    name: spinify;
+    duration: 1200ms;
+    iteration-count: infinite;
+  }
+  }
+}
+@keyframes spinify {
+  0% {
+    transform: translate(0px,0px);
+    
+  }
+  33% {
+    transform: translate(0px,24px);
+    // border-radius:100%;
+    width:20px;
+    height:20px;
+ 
+  }
+   66% {
+    transform:translate(0px,-16px);
+  }
+  
+   88% {
+    transform:translate(0px,4px);
+     
+  }
+  100% {
+    transform:translate(0px,0px);
+  }
+}
+.jack .b1 {
+  left: 40%;
+}
+.jack .b2 {
+  left: 48%;
+  animation-delay: 100ms;
+}
+.jack .b3 {
+  left: 56%;
+  animation-delay: 200ms;
+}
