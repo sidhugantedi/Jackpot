@@ -1,7 +1,7 @@
 .jack {
      h1 {
     font: {
-      size: 3.5rem;
+      size: 6.5rem;
       weight: 200;
     }
     color: #f35626;
@@ -9,7 +9,7 @@
     animation: hue 10000ms infinite linear, bounceIn 3s linear;
     position: relative;
     top: 25%;
-    left: 25%;
+    left: 27%;
   }
   position: fixed;
   left: 0;
@@ -50,12 +50,12 @@
 .slider {
   p {
     font: {
-      size: 1.5rem;
+      size: 3.5rem;
       weight: 200;
     }
     position: absolute;
       top: 55%;
-      left: 30%;
+      left: 32%;
     color: #fff;
     animation: {
       name: slide-in;
@@ -79,8 +79,8 @@
 }
 .jack {
   .b1, .b2, .b3 {
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 1.5em;
+    width: 1.5em;
     border-radius: 100%;
     background: rgba(256,256,256,0.89);
     margin: 5px;
@@ -102,8 +102,8 @@
   33% {
     transform: translate(0px,24px);
     // border-radius:100%;
-    width:20px;
-    height:20px;
+    width: 0.6em;
+    height: 0.6em;
  
   }
    66% {
@@ -128,4 +128,16 @@
 .jack .b3 {
   left: 56%;
   animation-delay: 200ms;
+}
+@media screen and (max-width: 800px) {
+  .jack h1 {
+    font-size: 3.6rem;
+  }
+  .slider p {
+    font-size: 1.8rem;
+  }
+.jack .b1, .jack .b2, .jack .b3 {
+   height: 0.6em;
+    width: 0.6em;
+}
 }
