@@ -1,7 +1,7 @@
 .jack {
      h1 {
     font: {
-      size: 80px;
+      size: 3.5rem;
       weight: 200;
     }
     color: #f35626;
@@ -50,7 +50,7 @@
 .slider {
   p {
     font: {
-      size: 45px;
+      size: 1.5rem;
       weight: 200;
     }
     position: absolute;
@@ -79,8 +79,8 @@
 }
 .jack {
   .b1, .b2, .b3 {
-    height: 30px;
-    width: 50px;
+    height: 1.5rem;
+    width: 1.5rem;
     border-radius: 100%;
     background: rgba(256,256,256,0.89);
     margin: 5px;
